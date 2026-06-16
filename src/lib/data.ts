@@ -203,9 +203,9 @@ export const GRADE: LinhaHorario[] = [
   { horario: "10:00 – 11:00", aulas: ["Kids", null, "Kids", null, "Kids", "Kids"] },
   { horario: "18:00 – 19:00", aulas: ["Juvenil", null, "Juvenil", null, "Juvenil", null] },
   { horario: "19:00 – 20:00", aulas: ["Kids", "Baby", "Kids", "Baby", "Kids", null] },
-  { horario: "20:00 – 21:30", aulas: ["Adulto", null, "Adulto", null, "Adulto", "Adulto"] },
+  { horario: "20:00 – 21:30", aulas: ["Adulto", null, "Adulto", null, "Adulto", null] },
   { horario: "20:15 – 21:15", aulas: [null, "Kids", null, "Kids", null, null] },
-  { horario: "21:30 – 22:30", aulas: ["Adulto", null, "Adulto", null, "Adulto", null] },
+  { horario: "21:30 – 22:30", aulas: [null, "Adulto", null, "Adulto", null, null] },
 ];
 
 /** Estilo das células da grade (monocromático). */
