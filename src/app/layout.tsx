@@ -4,7 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { WhatsAppFloat } from "@/components/WhatsAppFloat";
-import { ACADEMIA, CONTATO } from "@/lib/data";
+import { ACADEMIA, CONTATO, SITE_URL } from "@/lib/data";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -20,8 +20,8 @@ const oswald = Oswald({
 });
 
 export const metadata: Metadata = {
-  // Atualize para o domínio final da academia quando publicar.
-  metadataBase: new URL("https://excellence-company-bjj.vercel.app"),
+  // Atualize SITE_URL em src/lib/data.ts ao publicar com domínio próprio.
+  metadataBase: new URL(SITE_URL),
   title: {
     default:
       "Excellence Company Brazilian Jiu-Jitsu | Academia de Jiu-Jitsu",
@@ -46,7 +46,13 @@ export const metadata: Metadata = {
     type: "website",
     locale: "pt_BR",
     siteName: "Excellence Company BJJ",
-    images: ["/logo.jpg"],
+    // A imagem é gerada por src/app/opengraph-image.tsx.
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Excellence Company Brazilian Jiu-Jitsu",
+    description:
+      "Disciplina, respeito e evolução para toda a família no tatame. Agende sua aula experimental gratuita.",
   },
   icons: { icon: "/logo.jpg", apple: "/logo.jpg" },
 };

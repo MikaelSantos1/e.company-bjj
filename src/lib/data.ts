@@ -18,6 +18,9 @@ import {
 /* Contato / Marca                                                            */
 /* -------------------------------------------------------------------------- */
 
+/** URL pública do site — fonte única de verdade (metadata, sitemap, robots). */
+export const SITE_URL = "https://e-company-bjj.vercel.app";
+
 export const ACADEMIA = {
   nome: "Excellence Company",
   nomeCompleto: "Excellence Company Brazilian Jiu-Jitsu",
